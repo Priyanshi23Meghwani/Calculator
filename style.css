@@ -1,0 +1,93 @@
+body{
+    
+    background-color: black;
+}
+
+#container{
+    width: 1000px;
+    height:550px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bg.jpg);
+    margin: 7px 40px;
+}
+
+#calculator{
+    width:320px;
+    height:520px;
+    background-color:whitesmoke;
+    margin: 0 auto;
+    top:15px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result{
+    height:120px;
+}
+
+#history{
+    text-align: right;
+    height:20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #888585;
+}
+#output{
+    text-align: right;
+    height:60px;
+    margin:10px 20px;
+    font-size: 25px;
+}
+#keyboard{
+    height: 400px;
+}
+
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+    font-size: 15px;
+    
+    background-color:rgb(197, 197, 197);
+}
+.number, .empty{
+	background-color:whitesmoke;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 25px;
+}
+/*not working, outline still not removed*/
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+
+button:nth-child(4){
+    font-size: 20px;
+    background-color: greenyellow;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: hotpink;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: rgb(152, 90, 197);
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: rgb(230, 106, 106);
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: rgb(216, 163, 48);
+}
+
+
